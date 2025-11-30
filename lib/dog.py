@@ -1,6 +1,7 @@
 from models import Dog
 
 def create_table(base, engine):
+    """Create database tables using SQLAlchemy metadata."""
     base.metadata.create_all(engine)
 
 def save(session, dog):

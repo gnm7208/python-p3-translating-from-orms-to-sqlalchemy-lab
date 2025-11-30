@@ -4,7 +4,8 @@ def create_table(base, engine):
     base.metadata.create_all(engine)
 
 def save(session, dog):
-    pass
+    session.add(dog)
+    session.commit()
 
 def get_all(session):
     pass

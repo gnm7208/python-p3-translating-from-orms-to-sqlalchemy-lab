@@ -5,10 +5,12 @@ def create_table(base, engine):
     base.metadata.create_all(engine)
 
 def save(session, dog):
+    """Save a dog instance to the database."""
     session.add(dog)
     session.commit()
 
 def get_all(session):
+    """Return all dog instances from the database."""
     return session.query(Dog).all()
 
 def find_by_name(session, name):

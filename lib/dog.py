@@ -1,3 +1,4 @@
+"""SQLAlchemy ORM functions for Dog model operations."""
 from models import Dog
 
 def create_table(base, engine):
